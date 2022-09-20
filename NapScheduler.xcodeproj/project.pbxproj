@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA60928C28D908D500595E14 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60928B28D908D500595E14 /* Credentials.swift */; };
+		AA60929028D9244100595E14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA60928F28D9244100595E14 /* GoogleService-Info.plist */; };
+		AA60929A28D9282A00595E14 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AA60929928D9282A00595E14 /* FirebaseAuth */; };
+		AA60929C28D9282A00595E14 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AA60929B28D9282A00595E14 /* FirebaseFirestore */; };
+		AA60929E28D92B5400595E14 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60929D28D92B5400595E14 /* AppViewModel.swift */; };
+		AA6092A028D92F2100595E14 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA60929F28D92F2100595E14 /* LogInView.swift */; };
+		AA6092A228D93D9A00595E14 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6092A128D93D9A00595E14 /* SignUpView.swift */; };
+		AA6092A428D9890A00595E14 /* CreateProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6092A328D9890A00595E14 /* CreateProfile.swift */; };
+		AA9104CC28D83EEB00445E83 /* NapSchedulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9104CB28D83EEB00445E83 /* NapSchedulerApp.swift */; };
+		AA9104CE28D83EEC00445E83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9104CD28D83EEC00445E83 /* ContentView.swift */; };
+		AA9104D028D83EEF00445E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9104CF28D83EEF00445E83 /* Assets.xcassets */; };
+		AA9104D328D83EEF00445E83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA9104D228D83EEF00445E83 /* Preview Assets.xcassets */; };
+		AA9104DE28D83EEF00445E83 /* NapSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9104DD28D83EEF00445E83 /* NapSchedulerTests.swift */; };
+		AA9104E928D83EEF00445E83 /* NapSchedulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9104E828D83EEF00445E83 /* NapSchedulerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA9104DA28D83EEF00445E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA9104C028D83EEB00445E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA9104C728D83EEB00445E83;
+			remoteInfo = NapScheduler;
+		};
+		AA9104E528D83EEF00445E83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA9104C028D83EEB00445E83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA9104C728D83EEB00445E83;
+			remoteInfo = NapScheduler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA60928B28D908D500595E14 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		AA60928F28D9244100595E14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA60929D28D92B5400595E14 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		AA60929F28D92F2100595E14 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		AA6092A128D93D9A00595E14 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		AA6092A328D9890A00595E14 /* CreateProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfile.swift; sourceTree = "<group>"; };
+		AA9104C828D83EEB00445E83 /* NapScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NapScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9104CB28D83EEB00445E83 /* NapSchedulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapSchedulerApp.swift; sourceTree = "<group>"; };
+		AA9104CD28D83EEC00445E83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA9104CF28D83EEF00445E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA9104D228D83EEF00445E83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA9104D428D83EEF00445E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9104D928D83EEF00445E83 /* NapSchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NapSchedulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9104DD28D83EEF00445E83 /* NapSchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapSchedulerTests.swift; sourceTree = "<group>"; };
+		AA9104DF28D83EEF00445E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA9104E428D83EEF00445E83 /* NapSchedulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NapSchedulerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9104E828D83EEF00445E83 /* NapSchedulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapSchedulerUITests.swift; sourceTree = "<group>"; };
+		AA9104EA28D83EEF00445E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA9104C528D83EEB00445E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA60929A28D9282A00595E14 /* FirebaseAuth in Frameworks */,
+				AA60929C28D9282A00595E14 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA9104D628D83EEF00445E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA9104E128D83EEF00445E83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA60928928D908B200595E14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA9104CD28D83EEC00445E83 /* ContentView.swift */,
+				AA60929D28D92B5400595E14 /* AppViewModel.swift */,
+				AA60929F28D92F2100595E14 /* LogInView.swift */,
+				AA6092A128D93D9A00595E14 /* SignUpView.swift */,
+				AA6092A328D9890A00595E14 /* CreateProfile.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA60928A28D908C000595E14 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA60928B28D908D500595E14 /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA9104BF28D83EEB00445E83 = {
+			isa = PBXGroup;
+			children = (
+				AA9104CA28D83EEB00445E83 /* NapScheduler */,
+				AA9104DC28D83EEF00445E83 /* NapSchedulerTests */,
+				AA9104E728D83EEF00445E83 /* NapSchedulerUITests */,
+				AA9104C928D83EEB00445E83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA9104C928D83EEB00445E83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA9104C828D83EEB00445E83 /* NapScheduler.app */,
+				AA9104D928D83EEF00445E83 /* NapSchedulerTests.xctest */,
+				AA9104E428D83EEF00445E83 /* NapSchedulerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA9104CA28D83EEB00445E83 /* NapScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				AA60928A28D908C000595E14 /* Models */,
+				AA60928928D908B200595E14 /* Views */,
+				AA9104CB28D83EEB00445E83 /* NapSchedulerApp.swift */,
+				AA9104CF28D83EEF00445E83 /* Assets.xcassets */,
+				AA9104D428D83EEF00445E83 /* Info.plist */,
+				AA60928F28D9244100595E14 /* GoogleService-Info.plist */,
+				AA9104D128D83EEF00445E83 /* Preview Content */,
+			);
+			path = NapScheduler;
+			sourceTree = "<group>";
+		};
+		AA9104D128D83EEF00445E83 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA9104D228D83EEF00445E83 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA9104DC28D83EEF00445E83 /* NapSchedulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA9104DD28D83EEF00445E83 /* NapSchedulerTests.swift */,
+				AA9104DF28D83EEF00445E83 /* Info.plist */,
+			);
+			path = NapSchedulerTests;
+			sourceTree = "<group>";
+		};
+		AA9104E728D83EEF00445E83 /* NapSchedulerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA9104E828D83EEF00445E83 /* NapSchedulerUITests.swift */,
+				AA9104EA28D83EEF00445E83 /* Info.plist */,
+			);
+			path = NapSchedulerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA9104C728D83EEB00445E83 /* NapScheduler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA9104ED28D83EEF00445E83 /* Build configuration list for PBXNativeTarget "NapScheduler" */;
+			buildPhases = (
+				AA9104C428D83EEB00445E83 /* Sources */,
+				AA9104C528D83EEB00445E83 /* Frameworks */,
+				AA9104C628D83EEB00445E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NapScheduler;
+			packageProductDependencies = (
+				AA60929928D9282A00595E14 /* FirebaseAuth */,
+				AA60929B28D9282A00595E14 /* FirebaseFirestore */,
+			);
+			productName = NapScheduler;
+			productReference = AA9104C828D83EEB00445E83 /* NapScheduler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA9104D828D83EEF00445E83 /* NapSchedulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA9104F028D83EEF00445E83 /* Build configuration list for PBXNativeTarget "NapSchedulerTests" */;
+			buildPhases = (
+				AA9104D528D83EEF00445E83 /* Sources */,
+				AA9104D628D83EEF00445E83 /* Frameworks */,
+				AA9104D728D83EEF00445E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA9104DB28D83EEF00445E83 /* PBXTargetDependency */,
+			);
+			name = NapSchedulerTests;
+			productName = NapSchedulerTests;
+			productReference = AA9104D928D83EEF00445E83 /* NapSchedulerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA9104E328D83EEF00445E83 /* NapSchedulerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA9104F328D83EEF00445E83 /* Build configuration list for PBXNativeTarget "NapSchedulerUITests" */;
+			buildPhases = (
+				AA9104E028D83EEF00445E83 /* Sources */,
+				AA9104E128D83EEF00445E83 /* Frameworks */,
+				AA9104E228D83EEF00445E83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA9104E628D83EEF00445E83 /* PBXTargetDependency */,
+			);
+			name = NapSchedulerUITests;
+			productName = NapSchedulerUITests;
+			productReference = AA9104E428D83EEF00445E83 /* NapSchedulerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA9104C028D83EEB00445E83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AA9104C728D83EEB00445E83 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					AA9104D828D83EEF00445E83 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = AA9104C728D83EEB00445E83;
+					};
+					AA9104E328D83EEF00445E83 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = AA9104C728D83EEB00445E83;
+					};
+				};
+			};
+			buildConfigurationList = AA9104C328D83EEB00445E83 /* Build configuration list for PBXProject "NapScheduler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA9104BF28D83EEB00445E83;
+			packageReferences = (
+				AA60929828D9282A00595E14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = AA9104C928D83EEB00445E83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA9104C728D83EEB00445E83 /* NapScheduler */,
+				AA9104D828D83EEF00445E83 /* NapSchedulerTests */,
+				AA9104E328D83EEF00445E83 /* NapSchedulerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA9104C628D83EEB00445E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9104D328D83EEF00445E83 /* Preview Assets.xcassets in Resources */,
+				AA9104D028D83EEF00445E83 /* Assets.xcassets in Resources */,
+				AA60929028D9244100595E14 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA9104D728D83EEF00445E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA9104E228D83EEF00445E83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA9104C428D83EEB00445E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6092A028D92F2100595E14 /* LogInView.swift in Sources */,
+				AA60929E28D92B5400595E14 /* AppViewModel.swift in Sources */,
+				AA60928C28D908D500595E14 /* Credentials.swift in Sources */,
+				AA9104CE28D83EEC00445E83 /* ContentView.swift in Sources */,
+				AA6092A228D93D9A00595E14 /* SignUpView.swift in Sources */,
+				AA6092A428D9890A00595E14 /* CreateProfile.swift in Sources */,
+				AA9104CC28D83EEB00445E83 /* NapSchedulerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA9104D528D83EEF00445E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9104DE28D83EEF00445E83 /* NapSchedulerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA9104E028D83EEF00445E83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA9104E928D83EEF00445E83 /* NapSchedulerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA9104DB28D83EEF00445E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA9104C728D83EEB00445E83 /* NapScheduler */;
+			targetProxy = AA9104DA28D83EEF00445E83 /* PBXContainerItemProxy */;
+		};
+		AA9104E628D83EEF00445E83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA9104C728D83EEB00445E83 /* NapScheduler */;
+			targetProxy = AA9104E528D83EEF00445E83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA9104EB28D83EEF00445E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA9104EC28D83EEF00445E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA9104EE28D83EEF00445E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NapScheduler/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NapScheduler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borcheantovski.NapScheduler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA9104EF28D83EEF00445E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NapScheduler/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NapScheduler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borcheantovski.NapScheduler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AA9104F128D83EEF00445E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NapSchedulerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borcheantovski.NapSchedulerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NapScheduler.app/NapScheduler";
+			};
+			name = Debug;
+		};
+		AA9104F228D83EEF00445E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NapSchedulerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borcheantovski.NapSchedulerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NapScheduler.app/NapScheduler";
+			};
+			name = Release;
+		};
+		AA9104F428D83EEF00445E83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NapSchedulerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borcheantovski.NapSchedulerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NapScheduler;
+			};
+			name = Debug;
+		};
+		AA9104F528D83EEF00445E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NapSchedulerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.borcheantovski.NapSchedulerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NapScheduler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA9104C328D83EEB00445E83 /* Build configuration list for PBXProject "NapScheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9104EB28D83EEF00445E83 /* Debug */,
+				AA9104EC28D83EEF00445E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA9104ED28D83EEF00445E83 /* Build configuration list for PBXNativeTarget "NapScheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9104EE28D83EEF00445E83 /* Debug */,
+				AA9104EF28D83EEF00445E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA9104F028D83EEF00445E83 /* Build configuration list for PBXNativeTarget "NapSchedulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9104F128D83EEF00445E83 /* Debug */,
+				AA9104F228D83EEF00445E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA9104F328D83EEF00445E83 /* Build configuration list for PBXNativeTarget "NapSchedulerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9104F428D83EEF00445E83 /* Debug */,
+				AA9104F528D83EEF00445E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA60929828D9282A00595E14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA60929928D9282A00595E14 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA60929828D9282A00595E14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AA60929B28D9282A00595E14 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA60929828D9282A00595E14 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA9104C028D83EEB00445E83 /* Project object */;
+}
